@@ -1,3 +1,8 @@
-/**
- * Created by user on 06.10.2016.
- */
+$(function(){
+
+    $( window ).resize(function() {
+        var newHeightItems = $(window).height();
+        $("section.item").css({height : newHeightItems});
+    });
+
+});

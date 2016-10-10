@@ -1,8 +1,5 @@
 .nav > li {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJCAIAAAB8JNGzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABRJREFUeNpiOHPmDBMDAwM+DBBgAFKMAnXOCX6lAAAAAElFTkSuQmCC') left center no-repeat;
-}
-
-.nav > li {
     text-transform: uppercase;
 }
 

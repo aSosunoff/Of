@@ -1,5 +1,5 @@
 $(function(){
-    //$("section.item").css({height : $(window).height()});
+    $("section.item").css({'min-height' : $(window).height()});
     //
     //$( window ).resize(function() {
     //    var newHeightItems = $(window).height();

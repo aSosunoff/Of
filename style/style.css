@@ -2,6 +2,9 @@
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJCAIAAAB8JNGzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABRJREFUeNpiOHPmDBMDAwM+DBBgAFKMAnXOCX6lAAAAAElFTkSuQmCC') left center no-repeat;
     text-transform: uppercase;
 }
+.nav > li:first-child {
+    background: transparent;
+}
 
 header.top_header{
     background-color: #fff;
@@ -9,4 +12,3 @@ header.top_header{
     position: fixed;
     width: 100%;
 }
-

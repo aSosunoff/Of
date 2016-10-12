@@ -5,4 +5,10 @@ $(function(){
     $(".top_mnu").navigation();
 
     $("#top_header").hide_background();
+
+    $("#button_up").click(function(){
+        $("html, body").stop().animate({
+            scrollTop: 0
+        }, 800);
+    });
 });

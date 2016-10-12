@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     left: 0;
-
     width: 450px;
     bottom: 0;
     display: block;
@@ -17,7 +16,6 @@
     width: 110px;
     opacity: 0.2;
     transition: background-color .5s ease, opacity .5s ease;
-    /*transition: ;*/
     cursor: pointer;
 }
 #button_scroll_top #button_up:hover{
@@ -35,7 +33,11 @@
     transition: left .4s ease;
     font-size: 18px;
     color: #688319;
+    width: 20px;
+    margin-left: -10px;
+    height: 20px;
+    text-align: center;
 }
 #button_scroll_top #button_up:hover #direction_icon #icon_up{
-    left: 40%;
+    left: 50%;
 }

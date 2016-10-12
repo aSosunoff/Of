@@ -2,7 +2,6 @@ $.fn.navigation = function() {
 	// Cache selectors
 	var lastId,
 	topMenu = this,
-	topMenuHeight = topMenu.outerHeight(),
 			// All list items
 			menuItems = topMenu.find("a"),
 			// Anchors corresponding to menu items
@@ -11,6 +10,8 @@ $.fn.navigation = function() {
 				if (item.length) { return item; }
 			}),
 			noScrollAction = false;
+
+	$(menuItems[0]).addClass("active");
 
 	// Set to scroll to the top position
 	$("html, body").stop().animate({
@@ -21,7 +22,7 @@ $.fn.navigation = function() {
 	// so we can get a fancy scroll animation
 	menuItems.click(function(e) {
 		var href = $(this).attr("href"),
-		offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+		offsetTop = href === "#" ? 0 : $(href).offset().top - topMenu.outerHeight() + 1;
 		noScrollAction = true;
 		$("html, body").stop().animate({ 
 			scrollTop: offsetTop
@@ -29,8 +30,8 @@ $.fn.navigation = function() {
 			duration: 300,
 			complete: function() {
 				menuItems
-				.parent().removeClass("active")
-				.end().filter("[href='" + href +"']").parent().addClass("active");
+				.removeClass("active")
+				.filter("[href='" + href +"']").addClass("active");
 				setTimeout(function(){ noScrollAction = false; }, 10);
 			}
 		});
@@ -41,7 +42,7 @@ $.fn.navigation = function() {
 	$(window).scroll(function() {
 		if (!noScrollAction) {
 			// Get container scroll position
-			var fromTop = $(this).scrollTop() + topMenuHeight;
+			var fromTop = $(this).scrollTop() + topMenu.outerHeight();
 
 			// Get id of current scroll item
 			var cur = scrollItems.map(function() {
@@ -55,7 +56,7 @@ $.fn.navigation = function() {
 
 			if (lastId !== id) {
 				lastId = id;
-				menuItems.parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active");
+				menuItems.removeClass("active").filter("[href='#"+id+"']").addClass("active");
 			};
 		};
 	});

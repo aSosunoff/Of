@@ -4,4 +4,5 @@ $(function(){
     //Ссылки вида <a href="#contacts">Контакты</a>
     $(".top_mnu").navigation();
 
+    $("#top_header").hide_background();
 });

@@ -6,9 +6,14 @@
     background: transparent;
 }
 
-header.top_header{
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+header#top_header{
+    /*background-color: #fff;*/
+    /*border-bottom: 1px solid #ccc;*/
     position: fixed;
     width: 100%;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
 }

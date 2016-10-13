@@ -32,3 +32,7 @@
 body{
     font-family: SansOri;
 }
+
+.nav-pills>li+li {
+    margin-left: 0px;
+}

@@ -1,17 +1,6 @@
-.nav > li > a {
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJCAIAAAB8JNGzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABRJREFUeNpiOHPmDBMDAwM+DBBgAFKMAnXOCX6lAAAAAElFTkSuQmCC') left center no-repeat;
-    text-transform: uppercase;
-    -webkit-transition: padding .3s ease;
-    -moz-transition: padding .3s ease;
-    -ms-transition: padding .3s ease;
-    -o-transition: padding .3s ease;
-    transition: padding .3s ease;
-}
-.nav > li:first-child > a {
-    background-image: url("");
-}
 
-footer.bottom_footer .nav.social-button > li > a {
+
+footer.footer_info .nav.social-button > li > a {
     font-size: 17px;
     color: #FFF;
 }
@@ -35,7 +24,7 @@ header#top_header.hide-color{
 }
 header#top_header:hover,
 header#top_header.hide-color:hover{
-    background-color : rgba(255, 255, 255, .8);
+    background-color : rgba(255, 255, 255, .9);
     border-bottom : 1px solid #ccc;
 }
 
@@ -45,11 +34,60 @@ header#top_header.small-height .nav > li > a{
 
 /*END_Top_menu*/
 
-footer.bottom_footer{
+footer.footer_info {
     background-color: #363636;
 }
+footer.footer_info a,
+footer.footer_bottom a{
+    color: #fff;
+}
 
-.nav-pills > li > a.active, .nav-pills > li > a.active:hover, .nav-pills > li > a.active:focus {
+footer.footer_bottom {
+    background-color: #414141;
+    padding: 5px;
+}
+
+
+.nav-pills.link-help>li>a:focus, .nav>li>a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+.nav-pills.link-help li:first-child > a{
+    padding-top: 10px;
+}
+.nav-pills.link-help li > a{
+    padding: 5px 15px;
+}
+
+/**/
+.nav-pills.nav-pills-custom > li > a.active,
+.nav-pills.nav-pills-custom > li > a.active:hover,
+.nav-pills.nav-pills-custom > li > a.active:focus {
     color: #fff;
     background-color: #A9D52B;
+}
+.nav-pills.nav-pills-custom > li.active > a,
+.nav-pills.nav-pills-custom > li.active > a:hover,
+.nav-pills.nav-pills-custom > li.active > a:focus {
+    color: #fff;
+    background-color: #A9D52B;
+}
+.nav-pills.nav-pills-custom > li > a:hover,
+.nav-pills.nav-pills-custom > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #A9D52B;
+}
+.nav-pills.nav-pills-custom > li > a{
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJCAIAAAB8JNGzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABRJREFUeNpiOHPmDBMDAwM+DBBgAFKMAnXOCX6lAAAAAElFTkSuQmCC') left center no-repeat;
+    text-transform: uppercase;
+    color: #363636;
+    -webkit-transition: background-color .3s ease, padding .3s ease;
+    -moz-transition: background-color .3s ease, padding .3s ease;
+    -ms-transition: background-color .3s ease, padding .3s ease;
+    -o-transition: background-color .3s ease, padding .3s ease;
+    transition: background-color .3s ease, padding .3s ease;
+}
+.nav-pills.nav-pills-custom > li:first-child > a {
+    background-image: url("");
 }

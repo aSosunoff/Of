@@ -1,32 +1,32 @@
 section.item{
-    background-color: #eee;
     width: 100%;
 }
 
 section.item1{
+    background-color: #fff;
     height: 800px;
 }
 section.item2{
     height: 800px;
-    background-color: #c6e7d1;
+    background-color: #e3ffec;
 }
 section.item3{
     height: 800px;
-    background-color: #b3e784;
+    background-color: #ccecb0;
 }
 section.item4{
     height: 800px;
-    background-color: #e7e6b6;
+    background-color: #f0efcc;
 }
 section.item5{
     height: 800px;
-    background-color: #93dce7;
+    background-color: #c6eaf0;
 }
 section.item6{
     height: 800px;
-    background-color: #e78ec2;
+    background-color: #f4c6e1;
 }
 section.item7{
     height: 800px;
-    background-color: #8cbee7;
+    background-color: #bcd9f0;
 }

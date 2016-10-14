@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 450px;
+    width: 20%;
     bottom: 0;
     display: block;
 
@@ -13,7 +13,7 @@
 #button_scroll_top #button_up{
     height: 100%;
     padding-top: 40px;
-    width: 110px;
+    width: 30%;
     opacity: 0.2;
     transition: background-color .5s ease, opacity .5s ease;
     cursor: pointer;
@@ -28,7 +28,7 @@
 }
 
 #button_scroll_top #button_up #direction_icon #icon_up{
-    left: -30%;
+    left: -100%;
     position: relative;
     transition: left .4s ease;
     font-size: 18px;

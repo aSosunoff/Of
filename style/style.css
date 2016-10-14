@@ -1,11 +1,3 @@
-
-
-footer.footer_info .nav.social-button > li > a {
-    font-size: 17px;
-    color: #FFF;
-}
-
-
 /*Top_menu*/
 header#top_header{
     position: fixed;
@@ -30,10 +22,16 @@ header#top_header.hide-color:hover{
 
 header#top_header.small-height .nav > li > a{
     padding: 2px 15px;
+    font-size: 12px;
+}
+
+header#top_header .nav-pills.nav-pills-custom > li > a{
+    font-weight: bold;
 }
 
 /*END_Top_menu*/
 
+/*Footer*/
 footer.footer_info {
     background-color: #363636;
 }
@@ -46,7 +44,11 @@ footer.footer_bottom {
     background-color: #414141;
     padding: 5px;
 }
-
+footer.footer_info .nav.social-button > li > a {
+    font-size: 17px;
+    color: #FFF;
+}
+/*END_Footer*/
 
 .nav-pills.link-help>li>a:focus, .nav>li>a:hover {
     text-decoration: underline;
@@ -58,7 +60,9 @@ footer.footer_bottom {
 .nav-pills.link-help li > a{
     padding: 5px 15px;
 }
-
+.nav-pills.link-help li:last-child > a {
+    padding-bottom: 10px;
+}
 /**/
 .nav-pills.nav-pills-custom > li > a.active,
 .nav-pills.nav-pills-custom > li > a.active:hover,
@@ -82,11 +86,16 @@ footer.footer_bottom {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJCAIAAAB8JNGzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABRJREFUeNpiOHPmDBMDAwM+DBBgAFKMAnXOCX6lAAAAAElFTkSuQmCC') left center no-repeat;
     text-transform: uppercase;
     color: #363636;
-    -webkit-transition: background-color .3s ease, padding .3s ease;
-    -moz-transition: background-color .3s ease, padding .3s ease;
-    -ms-transition: background-color .3s ease, padding .3s ease;
-    -o-transition: background-color .3s ease, padding .3s ease;
-    transition: background-color .3s ease, padding .3s ease;
+    -webkit-transition: background-color .3s ease,
+    padding .3s ease, font-size .3s ease;
+    -moz-transition: background-color .3s ease,
+    padding .3s ease, font-size .3s ease;
+    -ms-transition: background-color .3s ease,
+    padding .3s ease, font-size .3s ease;
+    -o-transition: background-color .3s ease,
+    padding .3s ease, font-size .3s ease;
+    transition: background-color .3s ease,
+    padding .3s ease, font-size .3s ease;
 }
 .nav-pills.nav-pills-custom > li:first-child > a {
     background-image: url("");

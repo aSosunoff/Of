@@ -1,6 +1,7 @@
 /*Top_menu*/
 header#top_header{
     position: fixed;
+    z-index: 100;
     width: 100%;
     background-color : rgba(255, 255, 255, .4);
     border-bottom : 1px solid #ccc;

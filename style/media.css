@@ -15,6 +15,22 @@
     #button_scroll_top {
         width: 150px;
     }
+    .nav-pills.nav-pills-custom > li > a.active,
+    .nav-pills.nav-pills-custom > li > a.active:hover,
+    .nav-pills.nav-pills-custom > li > a.active:focus {
+        border-bottom: none;
+        background-color: #a9d52b;
+        color: #fff;
+    }
+    .nav-pills.nav-pills-custom > li > a:hover,
+    .nav-pills.nav-pills-custom > li > a:focus {
+        border-bottom: none;
+        background-color: #a9d52b;
+        color: #fff;
+    }
+    .nav-pills.nav-pills-custom > li > a{
+        background: transparent;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -47,7 +63,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-d
+
 }
 
 /* Large Devices, Wide Screens */

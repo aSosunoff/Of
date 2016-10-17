@@ -21,3 +21,6 @@ body{
 .nav-pills>li+li {
     margin-left: 0px;
 }
+.nav-justified > li > a {
+    margin-bottom: 0px;
+}

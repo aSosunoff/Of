@@ -107,3 +107,16 @@ footer.footer_info .nav.social-button > li > a {
 .nav-pills.social-button > li:first-child > a{
     background-image: url("");
 }
+
+.LIST-INFO{
+    margin: 0px;
+    padding: 0px;
+}
+.LIST-INFO li{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #707070;
+    padding: 10px 0px;
+    list-style-type: none;
+}

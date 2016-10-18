@@ -4,29 +4,35 @@ section.item{
 
 section.item1{
     background-color: #fff;
-    height: 800px;
+    min-height: 800px;
 }
 section.item2{
-    height: 800px;
+    min-height: 800px;
     background-color: #e3ffec;
 }
 section.item3{
-    height: 800px;
+    min-height: 800px;
     background-color: #ccecb0;
 }
 section.item4{
-    height: 800px;
+    min-height: 800px;
     background-color: #f0efcc;
 }
 section.item5{
-    height: 800px;
+    min-height: 800px;
     background-color: #c6eaf0;
 }
 section.item6{
-    height: 800px;
+    min-height: 800px;
     background-color: #f4c6e1;
 }
-section.item7{
-    height: 800px;
-    background-color: #bcd9f0;
+
+section .title-head-section{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    color: #8c8c8c;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 20px 0px;
+    margin: 0px;
 }

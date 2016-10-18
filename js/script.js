@@ -1,10 +1,10 @@
 $(function(){
     // Resize height block item
-    // $("section.item").css({'min-height' : $(window).height()});
-    // $( window ).resize(function() {
-    //    var newHeightItems = $(window).height();
-    //    $("section.item").css({'min-height' : newHeightItems});
-    // });
+    $("section.item").css({'min-height' : $(window).height()});
+    $( window ).resize(function() {
+       var newHeightItems = $(window).height();
+       $("section.item").css({'min-height' : newHeightItems});
+    });
 
     // Up scroll
     $("#button_up").click(function(){

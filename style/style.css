@@ -108,6 +108,23 @@ footer.footer_info .nav.social-button > li > a {
     background-image: url("");
 }
 
+/*************************************/
+.description{
+    padding: 10px 0px;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #7c7c7c;
+}
+.title-3{
+    padding: 10px 0px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #7c7c7c;
+    font-size: 20px;
+}
+/***************************/
 .LIST-INFO{
     margin: 0px;
     padding: 0px;

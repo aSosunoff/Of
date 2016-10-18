@@ -31,6 +31,10 @@
     .nav-pills.nav-pills-custom > li > a{
         background: transparent;
     }
+
+    .title-menu-item{
+        display: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -48,7 +52,10 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+    .nav-justified>li {
+        display: table-cell;
+        width: 1%;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -58,7 +65,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+    .icon-menu-item{
+        display: none;
+    }
 }
 
 /* Medium Devices, Desktops */

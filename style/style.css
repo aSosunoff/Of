@@ -127,26 +127,25 @@ footer.footer_info .nav.social-button > li > a {
     color: #7c7c7c;
     font-size: 20px;
 }
+/*img-people*/
 .box-img {
-    background-color: #fff;
-    border-radius: 3px;
-    float: left;
-    padding: 5px;
-    width: 100%;
-    margin: 15px 0px;
+    margin-bottom: 30px;
+}
+.box-img.shadow {
+    box-shadow: none;
 }
 .box-img a>img,
 .box-img>img {
     display: block;
-    float: left;
-    max-width: 100%;
-    margin-right: 5px;
-    height: auto;
-    border: 2px solid #eee;
-    width: 190px;
+    border: 5px solid #fff;
+    box-shadow: 0 0.005em 0.01em 0 rgba(0,0,0,.12),0 2px 10px 0 rgba(0,0,0,.12);
+    width: 100%;
+    margin-bottom: 5px;
 }
 .box-img .box-text{
-
+    padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0.005em 0.01em 0 rgba(0,0,0,.12),0 2px 10px 0 rgba(0,0,0,.12);
 }
 .box-img .box-text .title{
     font-weight: bold;
@@ -161,6 +160,7 @@ footer.footer_info .nav.social-button > li > a {
     font-size: 12px;
     padding: 2px 0px;
 }
+/*END-img-people*/
 /***************************/
 .LIST-INFO{
     margin: 0px;

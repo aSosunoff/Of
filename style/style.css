@@ -23,7 +23,6 @@ header#top_header.hide-color:hover{
 
 header#top_header.small-height .nav > li > a{
     padding: 2px 15px;
-    font-size: 12px;
 }
 
 header#top_header .nav-pills.nav-pills-custom > li > a{

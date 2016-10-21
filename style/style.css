@@ -127,6 +127,9 @@ footer.footer_info .nav.social-button > li > a {
     font-size: 20px;
 }
 
+.nopadding{
+    padding: 0px !important;
+}
 /***************************/
 .LIST-INFO{
     margin: 0px;

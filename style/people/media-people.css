@@ -11,6 +11,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
     /*img-people*/
     .box-img {
         background-color: #fff;
@@ -36,11 +41,6 @@
         box-shadow: none;
     }
     /*END-img-people*/
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
 }
 
 /* Extra Small Devices, Phones */

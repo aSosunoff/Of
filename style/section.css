@@ -21,7 +21,7 @@ section.item4{
 }
 section.item5{
     min-height: 800px;
-    background-color: #c6eaf0;
+    background: #ffffeb url(../Content/img/people.png) fixed;
 }
 section.item6{
     min-height: 800px;

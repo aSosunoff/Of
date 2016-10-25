@@ -112,9 +112,12 @@ footer.footer_info .nav.social-button > li > a {
 .description{
     padding: 10px 5px;
     margin: 0;
+    display: table-cell;
     font-size: 13px;
     letter-spacing: 1px;
     color: #7c7c7c;
+    height: 50px;
+    vertical-align: middle;
 }
 .title-3{
     padding: 10px 0px;
@@ -122,6 +125,7 @@ footer.footer_info .nav.social-button > li > a {
     font-weight: bold;
     letter-spacing: 1px;
     color: #7c7c7c;
+    height: 50px;
     font-size: 20px;
 }
 

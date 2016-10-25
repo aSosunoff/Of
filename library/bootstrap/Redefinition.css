@@ -24,3 +24,9 @@ body{
 .nav-justified > li > a {
     margin-bottom: 0px;
 }
+
+.thumbnail {
+    border: none;
+    padding: 0px;
+    border-radius: 0px;
+}

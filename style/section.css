@@ -46,6 +46,7 @@ section#Map{
 }
 
 section#Project{
+    background-attachment: fixed;
     background-color: #fff;
     min-height: 960px;
     background-size: cover;

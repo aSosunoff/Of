@@ -132,6 +132,36 @@ footer.footer_info .nav.social-button > li > a {
 .nopadding{
     padding: 0px !important;
 }
+
+
+/*People-event*/
+.info-box{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+}
+.info-box:hover i{
+    font-size: 80px;
+}
+.info-box i{
+    color: #A9D52B;
+    font-size: 60px;
+    width: 80px;
+    height: 80px;
+    transition: all .4s ease;
+}
+.info-box h3{
+    color: #707070;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.info-box p{
+    color: #707070;
+    font-size: 16px;
+}
+/*END-People-event*/
+
+
 /***************************/
 .LIST-INFO{
     margin: 0px;

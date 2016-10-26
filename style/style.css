@@ -162,7 +162,48 @@ footer.footer_info .nav.social-button > li > a {
 }
 /*END-People-event*/
 
-
+/*blur-block*/
+.blur-block{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.blur-block:hover img{
+    filter: Blur(1px);
+}
+.blur-block:hover .blur-block-info{
+    opacity: 1;
+}
+.blur-block img{
+    transition: all .4s ease;
+}
+.blur-block .blur-block-info{
+    transition: all .4s ease;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 77, 77, 0.5);
+    top: 0;
+    z-index: 100;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 30px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    right: 0;
+}
+.blur-block .blur-block-info p{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    margin-top: -20px;
+}
+/*END-blur-block*/
 /***************************/
 .LIST-INFO{
     margin: 0px;

@@ -169,12 +169,13 @@ footer.footer_info .nav.social-button > li > a {
     display: block;
 }
 .blur-block:hover img{
-    filter: Blur(1px);
+    filter: Blur(3px);
 }
 .blur-block:hover .blur-block-info{
     opacity: 1;
 }
 .blur-block img{
+    filter: Blur(0px);
     transition: all .4s ease;
 }
 .blur-block .blur-block-info{
@@ -183,7 +184,7 @@ footer.footer_info .nav.social-button > li > a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(77, 77, 77, 0.5);
+    background-color: rgba(169,213,43,0.8);
     top: 0;
     z-index: 100;
     color: #fff;

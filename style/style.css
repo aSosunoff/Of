@@ -137,7 +137,7 @@ footer.footer_info .nav.social-button > li > a {
 /*People-event*/
 .info-box{
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto 0px auto;
     max-width: 400px;
 }
 .info-box:hover i{

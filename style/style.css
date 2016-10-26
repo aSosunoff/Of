@@ -1,3 +1,11 @@
+::selection {
+    background-color: #A9D52B;
+    color: #fff; /* Safari */
+}
+::-moz-selection {
+    background-color: #A9D52B;
+    color: #fff; /* Firefox */
+}
 /*Top_menu*/
 header#top_header{
     position: fixed;

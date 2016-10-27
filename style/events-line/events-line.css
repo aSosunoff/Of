@@ -12,7 +12,9 @@
     width: 7px;
     left: 50%;
     margin-left: -3.5px;
-    transition: all .4s ease;
+    transition: background-color .4s ease,
+                left 1s ease,
+                margim-left 1s ease;
 }
 .events-line:hover:before{
     background-color: #A9D52B;
@@ -44,8 +46,14 @@
     border: 7px solid #f1f1f1;
     margin-left: -100px;
     text-align: center;
-    transition: all .4s ease;
+    transition: border .4s ease,
+                left 1s ease,
+                width 1s ease,
+                margin 1s ease,
+                height 1s ease;
 }
+
+
 
 .events-line>li .events-line-img:hover{
     border: 7px solid #A9D52B;
@@ -65,12 +73,13 @@
 }
 
 .events-line>li .events-line-panel{
-     width: 40%;
-     color: #707070;
-     padding: 0 20px 0 100px;
-     position: relative;
-     text-align: right;
-     float: left;
+    width: 40%;
+    color: #707070;
+    padding: 0 20px 0 100px;
+    position: relative;
+    text-align: right;
+    float: left;
+    transition: width 1s ease;
  }
 
 .events-line>li .events-line-panel hr{

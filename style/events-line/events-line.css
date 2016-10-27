@@ -83,7 +83,7 @@
  }
 
 .events-line>li .events-line-panel hr{
-    height: 2px;
+    height: 1px;
     border: none;
     background-color: #A9D52B;
     transition: all .3s ease;

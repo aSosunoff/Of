@@ -9,9 +9,9 @@
     content: " ";
     bottom: 0;
     background-color: #f1f1f1;
-    width: 7px;
+    width: 3px;
     left: 50%;
-    margin-left: -3.5px;
+    margin-left: -1.5px;
     transition: background-color .4s ease,
                 left 1s ease,
                 margim-left 1s ease;

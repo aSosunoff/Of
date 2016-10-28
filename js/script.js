@@ -7,7 +7,7 @@ $(function(){
     // });
 
     // Up scroll
-    $("#button_up").click(function(){
+    $("#Scroll-up-backgroung").click(function(){
         $("html, body").stop().animate({
             scrollTop: 0
         }, 800);
@@ -29,8 +29,10 @@ $(function(){
     $(window).scroll(function() {
         if($(this).scrollTop() > $("#Project").outerHeight()){
             $("#top_header").addClass("small-height");
+            $("#Scroll-up-box").addClass("show-button-scroll");
         }else{
             $("#top_header").removeClass("small-height");
+            $("#Scroll-up-box").removeClass("show-button-scroll");
         }
     });
 });

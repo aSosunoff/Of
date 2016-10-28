@@ -12,9 +12,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    #button_scroll_top {
-        width: 150px;
-    }
     .nav-pills.nav-pills-custom > li > a.active,
     .nav-pills.nav-pills-custom > li > a.active:hover,
     .nav-pills.nav-pills-custom > li > a.active:focus {

@@ -1,0 +1,54 @@
+#Scroll-up-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 21%;
+    bottom: 0;
+    z-index: 100;
+    display: block;
+
+}
+
+#Scroll-up-box #Scroll-up-backgroung {
+    height: 100%;
+    position: relative;
+    width: 40%;
+    transition: background-color .3s ease-out, opacity .3s ease-out;
+    cursor: pointer;
+}
+#Scroll-up-box #Scroll-up-backgroung:hover{
+    background-color: rgba(169,213,43,0.5);
+}
+#Scroll-up-box:hover #Scroll-up-backgroung #Scroll-up-button,
+#Scroll-up-box.show-button-scroll #Scroll-up-backgroung #Scroll-up-button {
+    left: 0%;
+}
+#Scroll-up-box #Scroll-up-backgroung:hover #Scroll-up-button {
+    background-color: transparent;
+}
+
+#Scroll-up-box #Scroll-up-backgroung #Scroll-up-button {
+    bottom: 10px;
+    position: absolute;
+    background-color: #A9D52B;
+    left: -100%;
+    width: 100%;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0px;
+    text-align: center;
+    transition: left .3s ease-out, background-color .3s ease-out;
+}
+
+#Scroll-up-box #Scroll-up-backgroung #Scroll-up-button-icon {
+    display: none;
+    position: relative;
+    transition: left .4s ease;
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+}
+#Scroll-up-box #Scroll-up-backgroung #Scroll-up-button-text {
+    display: inline-block;
+}

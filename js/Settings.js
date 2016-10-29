@@ -6,7 +6,7 @@ $(function(){
 
     //http://lokeshdhakar.com/projects/lightbox2/
     lightbox.option({
-        'albumLabel': "Фотография %1 из %2",
+        'albumLabel': "%1 из %2",
         'wrapAround': true
     })
 });

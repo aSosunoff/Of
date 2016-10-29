@@ -30,3 +30,22 @@ body{
     padding: 0px;
     border-radius: 0px;
 }
+.btn-xl.active, .btn-xl:active, .btn-xl:focus, .btn-xl:hover, .open .dropdown-toggle.btn-xl {
+    color: #fff;
+    background-color: #c3e65b;
+    border-color: #c3e65b;
+}
+
+.btn-xl {
+    color: #fff;
+    background-color: #A9D52B;
+    border-color: #A9D52B;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .2s linear;
+    border-radius: 0px;
+}
+

@@ -1,0 +1,60 @@
+.lb-outerContainer,
+.lightbox .lb-image{
+    border-radius: 0px;
+}
+.lb-dataContainer {
+    background-color: #fff;
+    border-radius: 0px;
+}
+.lb-data .lb-details span {
+    padding: 5px 10px;
+}
+
+
+.lb-dataContainer,
+.lb-data,
+.lb-container{
+    padding: 0px;
+}
+.lb-data .lb-caption {
+    display: block;
+    color: #7c7c7c;
+}
+
+
+
+.lb-data{
+    display: table;
+    width: 100%;
+}
+.lb-data .lb-details {
+    display: table-cell;
+    width: auto;
+    float: none;
+    line-height: 1.1em;
+}
+.lb-closeContainer{
+    display: table-cell;
+    width: 50px;
+    vertical-align: middle;
+    transition: background-color .2s linear;
+}
+.lb-closeContainer:hover{
+    background-color: #A9D52B;
+}
+.lb-closeContainer:hover .lb-close{
+    color: #fff;
+}
+.lb-data .lb-close {
+    float: none;
+    width: auto;
+    background: none;
+    color: #7c7c7c;
+    text-align: center;
+    height: 18px;
+    transition: color .2s linear;
+}
+.lb-data .lb-number {
+    text-align: center;
+    color: #ccc;
+}

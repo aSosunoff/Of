@@ -212,6 +212,31 @@ footer.footer_info .nav.social-button > li > a {
     margin-top: -20px;
 }
 /*END-blur-block*/
+
+/*Form-contact*/
+section#Contacts input.form-control{
+    height: auto;
+}
+section#Contacts .form-group{
+    margin-bottom: 25px;
+}
+section#Contacts input.form-control,
+section#Contacts textarea.form-control{
+    padding: 20px;
+    border-radius: 0px;
+}
+section#Contacts textarea{
+    height: 236px;
+    resize: none;
+}
+section#Contacts .form-control:focus {
+    border-color: #A9D52B;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*END-Form-contact*/
 /***************************/
 .LIST-INFO{
     margin: 0px;

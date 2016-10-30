@@ -38,6 +38,7 @@
     width: 50px;
     vertical-align: middle;
     transition: background-color .2s linear;
+    position: relative;
 }
 .lb-closeContainer:hover{
     background-color: #A9D52B;
@@ -47,12 +48,26 @@
 }
 .lb-data .lb-close {
     float: none;
-    width: auto;
+    width: 100%;
+    position: absolute;
     background: none;
     color: #7c7c7c;
+    top: 0px;
     text-align: center;
-    height: 18px;
+    height: 100%;
     transition: color .2s linear;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+}
+.lb-data .lb-close i{
+    position: absolute;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    left: 50%;
+    margin-top: -7.5px;
+    margin-left: -7.5px;
 }
 .lb-data .lb-number {
     text-align: center;

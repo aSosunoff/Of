@@ -36,3 +36,44 @@ $(function(){
         }
     });
 });
+
+;(function(win, $){
+    win.sty = function(selector){
+
+        return (function(z){
+            return{
+                cssS: function(st){
+                    $(z).focus(function(){
+                        $(this).css(st);
+                    });
+                }
+            }
+        })(selector)
+    };
+})(this, jQuery);
+
+sty("#name").cssS({border: "1px solid #000"});
+
+sty("#email").cssS({border: "2px solid #ddd"});
+// var createHelloFunction = function(name) {
+//     return function() {
+//         return 'Hello, ' + name;
+//     }
+// }
+// var sayHelloHabrahabr = createHelloFunction('Habrahabr');
+// var t = sayHelloHabrahabr();
+//
+// var sayHelloHabrahabr2 = createHelloFunction('Habrahabr2');
+// var y = sayHelloHabrahabr2();
+
+// function createCounter() {
+//     var numberOfCalls = 0;
+//     return function() {
+//         return ++numberOfCalls;
+//     }
+// }
+//
+// var fn = createCounter();
+// fn(); //1
+// fn(); //2
+// fn(); //3

@@ -10,6 +10,7 @@
     width: 100%;
 }
 .box-img .body-img{
+    height: 230px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 0.005em 0.01em 0 rgba(0,0,0,.12),0 2px 10px 0 rgba(0,0,0,.12);
@@ -26,7 +27,7 @@
     word-wrap: break-word;
     padding: 15px 5px;
     text-align: center;
-    min-height: 120px;
+    min-height: 160px;
     background-color: #ffffff;
     box-shadow: 0 0.005em 0.01em 0 rgba(0,0,0,.12),0 2px 10px 0 rgba(0,0,0,.12);
 }

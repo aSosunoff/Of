@@ -33,12 +33,12 @@ section#Target{
     background-color: #f0efcc;
 }
 section#People{
-    background: #eee url(../Content/img/people-background.jpg) no-repeat fixed;
+    background: #eee url(../Content/images/people-background.jpg) no-repeat fixed;
     background-size: cover;
 }
 section#People-event{
     padding: 40px 0 0 0px;
-    background: #eee url(../Content/img/people-background.jpg) no-repeat fixed;
+    background: #eee url(../Content/images/people-background.jpg) no-repeat fixed;
     background-size: cover;
 }
 section#Events{

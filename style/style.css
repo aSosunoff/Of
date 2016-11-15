@@ -55,6 +55,8 @@ footer.footer_info .nav.social-button > li > a {
 }
 /*END_Footer*/
 
+
+
 .nav-pills.link-help>li>a:focus, .nav>li>a:hover {
     text-decoration: underline;
     background-color: transparent;
@@ -237,6 +239,40 @@ section#Contacts .form-control:focus {
 
 
 /*END-Form-contact*/
+
+/* Прижимает Footer */
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+.content {
+    padding-bottom: 102px;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 102px;
+}
+/* END Прижимает Footer */
+
+/* Error 404 */
+.page-404{
+    width: 100%;
+    min-height: 100%;
+    background: url(/Content/images/404.jpg) no-repeat
+;
+    position: absolute;
+    background-size: cover;
+}
+/* END Error 404 */
+
+
 /***************************/
 .LIST-INFO{
     margin: 0px;

@@ -17,7 +17,7 @@ if(!ini_get('display_errors')){
 // определяем именованную константу в которой путь корня сайта
 define('ROOT', dirname(__FILE__));
 
-define('MASTER_PAGE',ROOT.'/View/Layout/Layout.php');
+define('MASTER_PAGE', ROOT.'/View/Layout/Master.php');
 //определяем мастер страницу
 require_once(ROOT.'/Components/Router.php');
 //require_once(ROOT.'/component/DB.php');

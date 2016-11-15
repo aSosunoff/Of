@@ -16,18 +16,26 @@ class Router
         }
     }
 
+    /*
+     * $segmentsArray
+     * [0] - viewFolder, controllerName
+     * [1] - viewLayout, actionName
+     * [2] - parametersArray
+     * return - array
+     * */
     private function _setArray($segmentsArray){
-        $array = [];
-        $viewName = ucfirst(array_shift($segmentsArray));
-        $controllerName = $viewName . "Controller";
+
+        $viewFolder = ucfirst(array_shift($segmentsArray));
+        $controllerName = $viewFolder . "Controller";
         $viewLayout = ucfirst(array_shift($segmentsArray));
-        $actionName = ucfirst($viewLayout);
+        $actionName = $viewLayout;
         $parametersArray = $segmentsArray;
 
+        $array = [];
         $array['View'] = ([
-            'name' => $viewName,
+            'folder' => $viewFolder,
             'layout' => $viewLayout,
-            'path' => ROOT . '/View/' . $viewName . '/' . $viewLayout . '.php'
+            'path' => ROOT . '/View/' . $viewFolder . '/' . $viewLayout . '.php'
         ]);
 
         $array['Controller'] = ([
@@ -44,42 +52,49 @@ class Router
     public function Run(){
 
         // Получить строку запроса
-            $url = $this->getURI();
+        $url = $this->getURI();
 
         // Проверить наличие такого запроса а routes.php
-            foreach ($this->_routes as $urlPattern => $path){
-                // Срвавниваем есть ли такой путь в наших роутах
-                if(preg_match("~$urlPattern~", $url)){
-                    $internalRoute = preg_replace("~$urlPattern~", $path, $url);
+        foreach ($this->_routes as $urlPattern => $path){
+            // Срвавниваем есть ли такой путь в наших роутах
+            if(preg_match("~$urlPattern~", $url)){
+                $internalRoute = preg_replace("~$urlPattern~", $path, $url);
 
-                    $array = $this->_setArray(explode('/', $internalRoute));
+                $array = $this->_setArray(explode('/', $internalRoute));
 
-                    // Подключить файл класса контроллера
-                    if (file_exists($array['Controller']['path'])) {
-                        include_once($array['Controller']['path']);
-                    }
-
-                    // Создаём объект класса контроллера который подключили ранее и вызываем метод
-                    $controllerObject = new $array['Controller']['name'];
-
-                    $result = call_user_func_array(
-                        array(
-                            $controllerObject,
-                            $array['Controller']['action']),
-                        $array['Parameter']);
-
-                    define('RENDER_BODY', $array['View']['path']);
-
-                    if(file_exists(MASTER_PAGE)){
-                        include_once(MASTER_PAGE);
-                    }
-                    else{ echo 'Ошибочка отображения'; }
-
-                    if ($result != null) {
-                        break;
-                    }
+                // Подключить файл класса контроллера
+                if (file_exists($array['Controller']['path'])) {
+                    include_once($array['Controller']['path']);
                 }
+
+                // Создаём объект класса контроллера который подключили ранее и вызываем метод
+                $controllerObject = new $array['Controller']['name'];
+
+                $result = call_user_func_array(
+                    array(
+                        $controllerObject,
+                        $array['Controller']['action']
+                    ),
+                    $array['Parameter']);!
+
+                define('RENDER_BODY', $array['View']['path']);
+
+                define("LAYOUT", ROOT . "/View/Layout/Layout.php");
+
+
+
+                if ($result != null) {
+                    break;
+                }
+            }else{
+                define("LAYOUT", ROOT . "/View/Error/404.php");
             }
 
+            if(file_exists(MASTER_PAGE)){
+                include_once(MASTER_PAGE);
+            } else { echo 'Ошибочка отображения'; }
+
+
+        }
     }
 }

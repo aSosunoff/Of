@@ -21,7 +21,6 @@ class Router
      * [0] - viewFolder, controllerName
      * [1] - viewLayout, actionName
      * [2] - parametersArray
-     * return - array
      * */
     private function _setArray($segmentsArray){
 
@@ -80,8 +79,6 @@ class Router
                 define('RENDER_BODY', $array['View']['path']);
 
                 define("LAYOUT", ROOT . "/View/Layout/Layout.php");
-
-
 
                 if ($result != null) {
                     break;

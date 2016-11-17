@@ -30,8 +30,9 @@ header#top_header.small-height .nav > li > a{
     padding: 2px 15px;
 }
 
-header#top_header .nav-pills.nav-pills-custom > li > a{
-    font-weight: bold;
+header#top_header .top_mnu{
+    font-family: OpenSansBold;
+    text-transform: uppercase;
 }
 
 /*END_Top_menu*/
@@ -96,7 +97,6 @@ footer.footer_info .nav.social-button > li > a {
 .nav-pills.nav-pills-custom > li > a,
 .nav-pills.social-button > li > a{
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJCAIAAAB8JNGzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABRJREFUeNpiOHPmDBMDAwM+DBBgAFKMAnXOCX6lAAAAAElFTkSuQmCC') left center no-repeat;
-    text-transform: uppercase;
     color: #fff;
     -webkit-transition: background-color .3s ease,
     padding .3s ease, font-size .3s ease;
@@ -120,10 +120,10 @@ footer.footer_info .nav.social-button > li > a {
 }
 .description{
     padding: 10px 5px;
+    font-family: RobotoCondensedLight;
     margin: 0;
     display: table-cell;
     font-size: 13px;
-    letter-spacing: 1px;
     color: #7c7c7c;
     height: 60px;
     vertical-align: middle;
@@ -132,15 +132,16 @@ footer.footer_info .nav.social-button > li > a {
     padding: 10px 0px;
     margin: 0;
     font-weight: bold;
-    letter-spacing: 1px;
     color: #7c7c7c;
     height: 60px;
     font-size: 20px;
+    font-family: OpenSansBold;
 }
 
 .nopadding{
     padding: 0px !important;
 }
+
 
 
 /*People-event*/
@@ -162,11 +163,11 @@ footer.footer_info .nav.social-button > li > a {
 }
 .info-box h3{
     color: #707070;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-family: OpenSansBold;
 }
 .info-box p{
     color: #707070;
+    font-family: RobotoCondensedLight;
     font-size: 16px;
 }
 /*END-People-event*/

@@ -39,9 +39,9 @@
     text-align: center;
 }
 .box-img .body-text .text{
-    letter-spacing: 1px;
     font-size: 100%;
     color: #7c7c7c;
+    font-family: RobotoCondensedLight;
     padding: 2px 0px;
 }
 /*END-img-people*/

@@ -3,6 +3,7 @@
 return array(
     //Home
     '^$' => 'home/index',
+    '^Contact$' => 'Contact/Send'
     //Account
     //'^account$' => 'account/index',
     //News

@@ -1,7 +1,7 @@
 $(function(){
     $('#send-contact').click(function(){
         AJAXGlobal({
-            url: '/contact.php',
+            url: '/Contact/',
             data: {
                 name: $('#name').val(),
                 email: $('#email').val(),

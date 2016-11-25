@@ -19,7 +19,11 @@ define('ROOT', dirname(__FILE__));
 
 define('MASTER_PAGE', ROOT.'/View/Layout/Master.php');
 //определяем мастер страницу
+require_once(ROOT.'/Components/ResultViewEnum.php');
 require_once(ROOT.'/Components/Router.php');
+require_once(ROOT.'/Components/JSONClass.php');
+require_once(ROOT.'/Controller/Controller.php');
+
 //require_once(ROOT.'/component/DB.php');
 //require_once(ROOT . '/component/Link.php');
 

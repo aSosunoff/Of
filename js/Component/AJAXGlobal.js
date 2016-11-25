@@ -19,24 +19,24 @@
                 }
             }
 
-            // if (data.message) {
-            //     if (data.message.Error) {
-            //         Message({
-            //             MessageText: data.message.Error || 'Неизвестная ошибка',
-            //             Delay: 4000
-            //         }).Error().consoleError(data.consoleMessage || 'Неизвестная ошибка');
-            //     }
-            //     if (data.message.Info) {
-            //         Message({
-            //             MessageText: data.message.Info || 'Информация'
-            //         }).Info();
-            //     }
-            //     if (data.message.Success) {
-            //         Message({
-            //             MessageText: data.message.Success || 'Успех'
-            //         }).Success();
-            //     }
-            // }
+            if (data.message) {
+                if (data.message.Error) {
+                    Message({
+                        MessageText: data.message.Error || 'Неизвестная ошибка',
+                        Delay: 4000
+                    }).Error().consoleError(data.consoleMessage || 'Неизвестная ошибка');
+                }
+                if (data.message.Info) {
+                    Message({
+                        MessageText: data.message.Info || 'Информация'
+                    }).Info();
+                }
+                if (data.message.Success) {
+                    Message({
+                        MessageText: data.message.Success || 'Успех'
+                    }).Success();
+                }
+            }
         },
         error: function (xhr, ajaxOptions, thrownError) {
 

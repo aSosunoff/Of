@@ -3,7 +3,9 @@ AddDefaultCharset utf-8
 RewriteEngine on
 RewriteBase /
 
+#RewriteCond [СТРОКА ДЛЯ СРАВНЕНИЯ] [УСЛОВИЕ] [ФЛАГИ]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
+#RewriteRule [ШАБЛОН] [СТРОКА ПОДСТАНОВКИ] [ФЛАГИ]
 RewriteRule ^(.*)$ index.php

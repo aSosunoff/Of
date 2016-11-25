@@ -109,8 +109,8 @@
         </header>
 
         <?php
-            if(file_exists(LAYOUT)){
-                include_once(LAYOUT);
+            if(file_exists(RENDER_BODY)){
+                include_once(RENDER_BODY);
             }
         ?>
     </div>

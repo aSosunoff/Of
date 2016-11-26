@@ -10,7 +10,7 @@ class Router
     }
 
     // Возвращаем путь запроса страницы
-    private function getURI(){
+    private function _getURI(){
         if(!empty($_SERVER['REQUEST_URI'])){
             $lineNameValue = "";
 
@@ -39,36 +39,35 @@ class Router
         $actionName = $viewLayout;
         $parametersArray = $segmentsArray;
 
-        $array = [];
-        $array['View'] = ([
-            'folder' => $viewFolder,
-            'layout' => $viewLayout,
-            'path' => ROOT . '/View/' . $viewFolder . '/' . $viewLayout . '.php'
-        ]);
-
-        $array['Controller'] = ([
-            'name' => $controllerName,
-            'action' => $actionName,
-            'path' => ROOT . "/Controller/" . $controllerName . ".php"
-        ]);
-
         $arr = explode('&', $parametersArray[0]);
-        $array['Parameter'] = $arr != null ? $arr : $parametersArray; //$parametersArray;
+
+        $array = ([
+            'View' => [
+                'folder' => $viewFolder,
+                'layout' => $viewLayout,
+                'path' => ROOT . '/View/' . $viewFolder . '/' . $viewLayout . '.php'
+            ],
+            'Controller' => [
+                'name' => $controllerName,
+                'action' => $actionName,
+                'path' => ROOT . "/Controller/" . $controllerName . ".php"
+            ],
+            'Parameter' => $arr != null ? $arr : $parametersArray
+        ]);
+
         return $array;
     }
 
     private function _goMasterLayout(){
-        //define("RENDER_BODY", $renderBody);
-
         if(file_exists(MASTER_PAGE)){
             include_once(MASTER_PAGE);
         } else { echo 'Ошибочка отображения'; }
     }
+
     // Метод Run который будет принимать управление от FRONT CONTROLLER
     public function Run(){
-        //$isLayout = false;
         // Получить строку запроса
-        $url = $this->getURI();
+        $url = $this->_getURI();
 
         // Проверить наличие такого запроса а routes.php
         foreach ($this->_routes as $urlPattern => $path){
@@ -82,7 +81,7 @@ class Router
                 // Подключить файл класса контроллера
                 if (file_exists($array['Controller']['path'])) {
                     include_once($array['Controller']['path']);
-                }//else{ $this->_goMasterLayout(ROOT . "/View/Error/Er_404.php"); }
+                }
 
                 // Создаём объект класса контроллера который подключили ранее и вызываем метод
                 $controllerObject = new $array['Controller']['name'];
@@ -100,22 +99,13 @@ class Router
 
                     if($result['result'] != ResultViewEnum::JSON_RESULT){
                         define('RENDER_BODY', $array['View']['path']);
-                        //$this->_goMasterLayout($array['View']['path']);
                         $this->_goMasterLayout();
-
                     }else{
                         echo $result['data'];
                     }
-
-                    //$isLayout = true;
-
                     break;
                 }
             }
         }
-
-//        if(!$isLayout){
-//            $this->_goMasterLayout(ROOT . "/View/Error/Er_404.php");
-//        }
     }
 }

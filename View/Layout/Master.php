@@ -7,27 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--<link rel="shortcut icon" href="favicon.png" />-->
-    <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="library/bootstrap/Redefinition.css"/>
-    <link rel="stylesheet" href="library/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="library/owl-carousel/owl.theme.css">
-    <link rel="stylesheet" href="library/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/library/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/library/bootstrap/Redefinition.css"/>
+    <link rel="stylesheet" href="/library/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/library/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="/library/font-awesome-4.6.3/css/font-awesome.min.css">
     <!--http://lokeshdhakar.com/projects/lightbox2/-->
-    <link rel="stylesheet" href="library/lightbox2-master/css/lightbox.css">
-    <link rel="stylesheet" href="library/lightbox2-master/Redefinition.css">
+    <link rel="stylesheet" href="/library/lightbox2-master/css/lightbox.css">
+    <link rel="stylesheet" href="/library/lightbox2-master/Redefinition.css">
 
-    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="/style/fonts.css">
 
-    <link rel="stylesheet" href="style/scroll-up/scroll_up.css">
-    <link rel="stylesheet" href="style/scroll-up/media-scroll-up.css">
-    <link rel="stylesheet" href="style/people/people.css">
-    <link rel="stylesheet" href="style/people/media-people.css">
-    <link rel="stylesheet" href="style/events-line/events-line.css">
-    <link rel="stylesheet" href="style/events-line/media-events-line.css">
+    <link rel="stylesheet" href="/style/scroll-up/scroll_up.css">
+    <link rel="stylesheet" href="/style/scroll-up/media-scroll-up.css">
+    <link rel="stylesheet" href="/style/people/people.css">
+    <link rel="stylesheet" href="/style/people/media-people.css">
+    <link rel="stylesheet" href="/style/events-line/events-line.css">
+    <link rel="stylesheet" href="/style/events-line/media-events-line.css">
 
-    <link rel="stylesheet" href="style/section.css"/>
-    <link rel="stylesheet" href="style/style.css"/>
-    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="/style/section.css"/>
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/media.css">
 </head>
 <body>
 <div class="wrapper">
@@ -147,19 +147,19 @@
         </footer>
     </div>
 </div>
-<script src="library/jquery/jquery.js" type="text/javascript"></script>
-<script src="library/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-<script src="library/owl-carousel/owl.carousel.js" type="text/javascript"></script>
-<script src="library/landing-nav/navigation.js" type="text/javascript"></script>
+<script src="/library/jquery/jquery.js" type="text/javascript"></script>
+<script src="/library/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="/library/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+<script src="/library/landing-nav/navigation.js" type="text/javascript"></script>
 <!--http://lokeshdhakar.com/projects/lightbox2/-->
-<script src="library/lightbox2-master/js/lightbox.js"></script>
+<script src="/library/lightbox2-master/js/lightbox.js"></script>
 
-<script src="js/Component/Message.js" type="text/javascript"></script>
-<script src="js/Component/AJAXGlobal.js" type="text/javascript"></script>
+<script src="/js/Component/Message.js" type="text/javascript"></script>
+<script src="/js/Component/AJAXGlobal.js" type="text/javascript"></script>
 
-<script src="js/Settings.js" type="text/javascript"></script>
-<script src="js/contact.js" type="text/javascript"></script>
-<script src="js/script.js" type="text/javascript"></script>
+<script src="/js/Settings.js" type="text/javascript"></script>
+<script src="/js/contact.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
 <!-- Yandex.Metrika counter -->
 <!-- Google Analytics counter -->
 </body>

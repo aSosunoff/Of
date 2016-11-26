@@ -2,7 +2,7 @@
 
 return array(
     //Home
-    '^$' => 'home/index',
+    '^$' => 'Home/Index',
     //Contact
     //'^Contact$' => 'Contact/Send',
     //'^Contact/Send$' => 'Contact/Send',

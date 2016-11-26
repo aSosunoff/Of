@@ -4,7 +4,10 @@ RewriteEngine on
 RewriteBase /
 
 #RewriteCond [СТРОКА ДЛЯ СРАВНЕНИЯ] [УСЛОВИЕ] [ФЛАГИ]
+
+# Если нет такого файла
 RewriteCond %{REQUEST_FILENAME} !-f
+# Если нет такой папки
 RewriteCond %{REQUEST_FILENAME} !-d
 
 #RewriteRule [ШАБЛОН] [СТРОКА ПОДСТАНОВКИ] [ФЛАГИ]

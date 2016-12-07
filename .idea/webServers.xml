@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3bf7c835-82e6-4181-b9d6-ba731dd4d3b6" name="Project_Murom" url="http://s22.host-food.ru">
+        <fileTransfer host="s22.host-food.ru" port="21" rootFolder="/www/nbook.site" password="df9edfcfdfe3dfd0df99dfc2dfccdfc1dff3" username="h93874">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

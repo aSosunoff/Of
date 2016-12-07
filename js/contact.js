@@ -1,15 +1,17 @@
 $(function(){
     $('#send-contact').click(function(){
+        $(".load-gif").addClass("load-gif-show");
         AJAXGlobal({
             url: '/Contact/',
             data: {
-                name: $('#name').val(),
-                email: $('#email').val(),
+                name: $('#projectInputName').val(),
+                email: $('#projectInputEmail').val(),
                 phone: $('#projectInputPhone').inputmask('unmaskedvalue'),
-                message: $('#message').val()
+                message: $('#projectInputMessage').val()
             },
-            success: function(data){
-                console.log(data);
+            success: function(data){},
+            complete: function(){
+                $(".load-gif").removeClass("load-gif-show");
             }
         });
     });

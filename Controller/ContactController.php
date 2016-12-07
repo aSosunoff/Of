@@ -1,4 +1,7 @@
 <?php
+include_once ROOT . '/Model/ContactModel.php';
+include_once ROOT . '/Model/MailModel.php';
+
 class ContactController extends Controller
 {
     private function _getValue($type, $value){
@@ -378,17 +381,20 @@ class ContactController extends Controller
             //$mess.="<b>Телефон:</b> $phone<br>";
             //$mess.="<b>Дата и Время:</b> $dt</body></html>";
             //конвертируем
-            $mess = $this->_getHtmlContact($name, $message, $email, $phone);
+            $emailHtml = $this->_getHtmlContact($name, $message, $email, $phone);
             //$mess = iconv("utf-8","windows-1251", $this->_getHtml($name, $message, $email, $phone));
             //$mess = convert_cyr_string($mess, "w", "k");
 
             $headers="MIME-Version: 1.0\r\n";
             $headers.="Content-Type: text/html; charset=koi8-r\r\n";
             $headers.="From: $email\r\n"; // откуда письмо
-            mail($mail, $title, $mess, $headers); // отправляем
+            mail($mail, $title, $emailHtml, $headers); // отправляем
             //mail("aiddeath@mail.ru", "My Subject", $message);
             $jsonClass->Success = true;
             $jsonClass->Messages['Success'] = "<p>Сообщение отправлено.</p><p>Мы скоро Вам перезвоним!</p>";
+
+            ContactModel::SetContact($name, $email, $phone, $message);
+            MailModel::SetHtmlFromContact($emailHtml);
         }
 
 

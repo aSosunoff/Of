@@ -550,11 +550,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eiu
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="label-for-input" for="projectInputName">Имя:</label>
-                            <input type="text" class="form-control" id="name" autocomplete="off"/>
+                            <input type="text" class="form-control" id="projectInputName" autocomplete="off"/>
                         </div>
                         <div class="form-group">
                             <label class="label-for-input" for="projectInputEmail">Email:</label>
-                            <input type="email" class="form-control" id="email" autocomplete="off"/>
+                            <input type="email" class="form-control" id="projectInputEmail" autocomplete="off"/>
                         </div>
                         <div class="form-group">
                             <label class="label-for-input" for="projectInputPhone">Телефон:</label>
@@ -564,11 +564,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eiu
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="label-for-input" for="projectInputMessage">Сообщение:</label>
-                            <textarea id="message" class="form-control"></textarea>
+                            <textarea id="projectInputMessage" class="form-control"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-12 text-center">
                         <div class="btn btn-xl" id="send-contact">Отправить</div>
+                        <div class="load-gif"></div>
                     </div>
                 </div>
             </div>

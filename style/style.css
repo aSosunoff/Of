@@ -229,13 +229,18 @@ section#Contacts textarea.form-control{
     border-radius: 0px;
 }
 section#Contacts textarea{
-    height: 236px;
+    height: 285px;
     resize: none;
 }
 section#Contacts .form-control:focus {
     border-color: #A9D52B;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.label-for-input{
+    color: #fff;
+    font-family: RobotoCondensedLight;
+    letter-spacing: 1px;
 }
 
 

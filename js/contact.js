@@ -5,7 +5,7 @@ $(function(){
             data: {
                 name: $('#name').val(),
                 email: $('#email').val(),
-                phone: $('#phone').val(),
+                phone: $('#projectInputPhone').inputmask('unmaskedvalue'),
                 message: $('#message').val()
             },
             success: function(data){

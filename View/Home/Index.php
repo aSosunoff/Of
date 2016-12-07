@@ -549,17 +549,21 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eiu
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name"/>
+                            <label class="label-for-input" for="projectInputName">Имя:</label>
+                            <input type="text" class="form-control" id="name" autocomplete="off"/>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email"/>
+                            <label class="label-for-input" for="projectInputEmail">Email:</label>
+                            <input type="email" class="form-control" id="email" autocomplete="off"/>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" id="phone"/>
+                            <label class="label-for-input" for="projectInputPhone">Телефон:</label>
+                            <input type="tel" class="form-control" id="projectInputPhone" autocomplete="off"/>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
+                            <label class="label-for-input" for="projectInputMessage">Сообщение:</label>
                             <textarea id="message" class="form-control"></textarea>
                         </div>
                     </div>

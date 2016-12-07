@@ -41,9 +41,10 @@ body{
     background-color: #A9D52B;
     border-color: #A9D52B;
     border-radius: 3px;
-    font-size: 18px;
-    padding: 20px 40px;
+    font-size: 14px;
+    padding: 10px 40px;
     font-weight: bold;
+    font-family: "RobotoCondensedLight";
     letter-spacing: 1px;
     transition: all .2s linear;
     border-radius: 0px;

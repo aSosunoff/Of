@@ -153,6 +153,10 @@
 <script src="/library/landing-nav/navigation.js" type="text/javascript"></script>
 <!--http://lokeshdhakar.com/projects/lightbox2/-->
 <script src="/library/lightbox2-master/js/lightbox.js"></script>
+<script src="/library/jquery/inputmask/inputmask.js"></script>
+<script src="/library/jquery/inputmask/inputmask.phone.extensions.js"></script>
+<script src="/library/jquery/inputmask/jquery.inputmask.js"></script>
+
 
 <script src="/js/Component/Message.js" type="text/javascript"></script>
 <script src="/js/Component/AJAXGlobal.js" type="text/javascript"></script>

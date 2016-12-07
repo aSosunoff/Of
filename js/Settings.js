@@ -9,4 +9,6 @@ $(function(){
         'albumLabel': "%1 из %2",
         'wrapAround': true
     })
+
+    $("#projectInputPhone").inputmask({"mask": "8 (999) 999-99-99"}); //specifying options
 });

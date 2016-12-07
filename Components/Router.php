@@ -37,9 +37,10 @@ class Router
         $controllerName = $viewFolder . "Controller";
         $viewLayout = ucfirst(array_shift($segmentsArray));
         $actionName = $viewLayout;
-        $parametersArray = $segmentsArray;
 
-        $arr = explode('&', $parametersArray[0]);
+        if(count($segmentsArray) > 0){
+            $segmentsArray = explode('&', $segmentsArray[0]);
+        }
 
         $array = ([
             'View' => [
@@ -52,7 +53,7 @@ class Router
                 'action' => $actionName,
                 'path' => ROOT . "/Controller/" . $controllerName . ".php"
             ],
-            'Parameter' => $arr != null ? $arr : $parametersArray
+            'Parameter' => $segmentsArray
         ]);
 
         return $array;

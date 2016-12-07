@@ -216,61 +216,6 @@ footer.footer_info .nav.social-button > li > a {
 }
 /*END-blur-block*/
 
-/*Form-contact*/
-section#Contacts input.form-control{
-    height: auto;
-    border-width: 0px 0px 1px 0px;
-}
-section#Contacts .form-group{
-    margin-bottom: 25px;
-}
-section#Contacts input.form-control,
-section#Contacts textarea.form-control{
-    padding: 0px 20px;
-    border-radius: 0px;
-    font-size: 30px;
-    box-shadow: none;
-    font-family: RobotoCondensedLight;
-    color: #fff;
-    background-color: transparent;
-    transition: background-color .3s linear;
-}
-section#Contacts input.form-control:hover,
-section#Contacts textarea.form-control:hover{
-    background-color: #fff;
-    color: #000;
-}
-section#Contacts textarea{
-    height: 228px;
-    resize: none;
-    border-width: 0px 0px 1px 1px;
-}
-section#Contacts .form-control:focus {
-    border-color: #A9D52B;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.label-for-input{
-    color: #fff;
-    font-family: RobotoCondensedLight;
-    letter-spacing: 1px;
-}
-.load-gif-show{
-    opacity: 1 !important;
-}
-.load-gif{
-    width: 50px;
-    height: 50px;
-    transition: opacity .3s linear;
-    opacity: 0;
-    display: block;
-    margin: 0 auto;
-    background: url(/Content/images/preloadgif.gif) no-repeat 50% 50%;
-}
-
-
-/*END-Form-contact*/
-
 /* Прижимает Footer */
 html,
 body {

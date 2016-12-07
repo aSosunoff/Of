@@ -547,7 +547,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eiu
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="form-group">
                             <label class="label-for-input" for="projectInputName">Имя:</label>
                             <input type="text" class="form-control" id="projectInputName" autocomplete="off"/>
@@ -561,13 +561,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eiu
                             <input type="tel" class="form-control" id="projectInputPhone" autocomplete="off"/>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="form-group">
                             <label class="label-for-input" for="projectInputMessage">Сообщение:</label>
                             <textarea id="projectInputMessage" class="form-control"></textarea>
                         </div>
                     </div>
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12 col-md-12 text-center">
                         <div class="btn btn-xl" id="send-contact">Отправить</div>
                         <div class="load-gif"></div>
                     </div>

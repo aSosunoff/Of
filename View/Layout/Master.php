@@ -18,14 +18,22 @@
 
     <link rel="stylesheet" href="/style/fonts.css">
 
+    <link rel="stylesheet" href="/style/section.css"/>
+
     <link rel="stylesheet" href="/style/scroll-up/scroll_up.css">
     <link rel="stylesheet" href="/style/scroll-up/media-scroll-up.css">
     <link rel="stylesheet" href="/style/people/people.css">
     <link rel="stylesheet" href="/style/people/media-people.css">
     <link rel="stylesheet" href="/style/events-line/events-line.css">
     <link rel="stylesheet" href="/style/events-line/media-events-line.css">
+    <link rel="stylesheet" href="/style/project-section/project-section.css">
+    <link rel="stylesheet" href="/style/project-section/media-project-section.css">
+    <link rel="stylesheet" href="/style/people-event/people-event.css">
+    <link rel="stylesheet" href="/style/people-event/media-people-event.css">
+    <link rel="stylesheet" href="/style/contact/contact.css">
+    <link rel="stylesheet" href="/style/contact/media-contact.css">
 
-    <link rel="stylesheet" href="/style/section.css"/>
+
     <link rel="stylesheet" href="/style/style.css"/>
     <link rel="stylesheet" href="/style/media.css">
 </head>

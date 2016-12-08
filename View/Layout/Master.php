@@ -36,6 +36,8 @@
 
     <link rel="stylesheet" href="/style/style.css"/>
     <link rel="stylesheet" href="/style/media.css">
+
+    <link rel="stylesheet" href="/style/developer.css"/>
 </head>
 <body>
 <div class="wrapper">
@@ -126,13 +128,6 @@
         <footer class="footer_info">
             <div class="container">
                 <div class="row">
-<!--                    <div class="col-sm-4">-->
-<!--                        <ul class="nav nav-pills nav-stacked link-help">-->
-<!--                            <li><a href="#">О проекте</a></li>-->
-<!--                            <li><a href="#">Часто задаваемые вопросы?</a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                    <div class="col-sm-4"></div>-->
                     <div class="col-sm-4 col-sm-offset-8">
                         <ul class="nav nav-pills pull-right social-button">
                             <li><a href="https://vk.com/" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
@@ -147,8 +142,15 @@
         <footer class="footer_bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <span>2016&#169; - Все права защищены</span>
+                    <div class="col-sm-6">
+                        <div class="law">2016&#169; - Все права защищены</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <span id="developer">
+                            <span class="developer-description">Разработка:</span>
+                            <span class="developer-link"><a href="https://vk.com/berg_it" target="_blank">Alexander Berg</a></span>
+                        </span>
+
                     </div>
                 </div>
             </div>

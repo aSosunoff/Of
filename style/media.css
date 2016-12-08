@@ -12,6 +12,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .law{
+        text-align: center;
+    }
     .nav-pills.nav-pills-custom > li > a.active,
     .nav-pills.nav-pills-custom > li > a.active:hover,
     .nav-pills.nav-pills-custom > li > a.active:focus {

@@ -24,6 +24,7 @@ require_once(ROOT . '/Components/enum/ContactInputTypeEnum.php');
 require_once(ROOT . '/Components/Router.php');
 require_once(ROOT . '/Components/JSONClass.php');
 require_once(ROOT . '/Controller/Controller.php');
+include_once ROOT . "/Components/DB.php";
 
 //require_once(ROOT.'/component/DB.php');
 //require_once(ROOT . '/component/Link.php');

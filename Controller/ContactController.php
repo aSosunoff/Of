@@ -61,12 +61,19 @@ class ContactController extends Controller
           <meta name=\"x-apple-disable-message-reformatting\">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
           <title>Письмо из контактов</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
         </head>
-        <body width=\"100%\" bgcolor=\"#d4d4d4\"
-              style=\"
+        <body>
+              
+          <div 
+            style=\"
                 margin: 0;
                 mso-line-height-rule: exactly;
                 padding: 0px 10px;
-                box-sizing: border-box;\">
+                box-sizing: border-box;
+                background-color: #d4d4d4;
+                width='100%'\">
+          
+          
+                
           <!-- Visually Hidden Preheader Text : BEGIN -->
           <div style=\"display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;\">
             (Optional) This text will appear in the inbox preview, but not the email body.
@@ -86,22 +93,26 @@ class ContactController extends Controller
           <!-- Clear Spacer : END -->
         
           <!-- Email Header : BEGIN -->
-          <table role=\"presentation\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\" align=\"center\" width=\"600\" style=\"margin: auto;\" class=\"email-container\">
+          <table role=\"presentation\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\" align=\"center\" width=\"600\" class=\"email-container\"
+            style=\"
+              height: 60px;
+              margin: auto;\">
             <tr>
               <td style=\"
-              text-align: center;
-              font-family: impact;
-              font-size: 60px;
-              background-color: #A9D52B;
-              color: #fff;\">
+                text-align: center;
+                vertical-align: middle;
+                font-family: impact;
+                background-color: #A9D52B;
+                color: #fff;\">
                 <a href=\"#\"
                   style=\"
-                    padding: 10px 0;
                     text-decoration: none;
                     color: inherit;
                     width: 100%;
                     height: 100%;
-                    display: block;\">
+                    padding: 20px 0px;
+                    display: block;
+                    font-size: 40px;\">
                   Размах</a>
               </td>
             </tr>
@@ -241,7 +252,7 @@ class ContactController extends Controller
             </table>
           </div>
           <!-- Email Footer : END -->
-        
+        </div>
         </body>
         </html>";
     }
@@ -366,11 +377,11 @@ class ContactController extends Controller
             $jsonClass->Messages['Info'] = $eEn;
         }else{
 
-            $mail = "aiddeath@mail.ru"; // e-mail куда уйдет письмо
+            $mail = "admin@nbook.site"; // e-mail куда уйдет письмо
             $title = "Новое сообщение из конатактов"; // заголовок(тема) письма
             //конвертируем
-            //$title = iconv("utf-8","windows-1251", $title);
-            //$title = convert_cyr_string($title, "w", "k");
+            $title = iconv("utf-8","windows-1251", $title);
+            $title = convert_cyr_string($title, "w", "k");
 
             $message = str_replace("\r\n", "<br>", $message); // обрабатываем
 
@@ -382,14 +393,14 @@ class ContactController extends Controller
             //$mess.="<b>Дата и Время:</b> $dt</body></html>";
             //конвертируем
             $emailHtml = $this->_getHtmlContact($name, $message, $email, $phone);
-            //$mess = iconv("utf-8","windows-1251", $this->_getHtml($name, $message, $email, $phone));
-            //$mess = convert_cyr_string($mess, "w", "k");
+            $emailHtml = iconv("utf-8","windows-1251", $emailHtml);
+            $emailHtml = convert_cyr_string($emailHtml, "w", "k");
 
             $headers="MIME-Version: 1.0\r\n";
             $headers.="Content-Type: text/html; charset=koi8-r\r\n";
             $headers.="From: $email\r\n"; // откуда письмо
             mail($mail, $title, $emailHtml, $headers); // отправляем
-            //mail("aiddeath@mail.ru", "My Subject", $message);
+
             $jsonClass->Success = true;
             $jsonClass->Messages['Success'] = "<p>Сообщение отправлено.</p><p>Мы скоро Вам перезвоним!</p>";
 
@@ -398,31 +409,6 @@ class ContactController extends Controller
         }
 
 
-
-
-        //echo 's';
-        //if(isset($_POST['a'])) {
-
-//                $arr = array(
-//                    success => false,
-//                    'name' => $name,
-//                    'email' => $email,
-//                    'phone' => $phone,
-//                    'messages' => $message,
-//                    message => array(
-//                        Info => 'qwerty'
-//                    ));
-
-
-
-//        $jsonClass->Result = array(
-//            'name' => $name,
-//            'email' => $email,
-//            'phone' => $phone,
-//            'messages' => $message
-//        );
-
-        //    header("Content-type: text/txt; charset=UTF-8");
         return Controller::JsonResult($jsonClass->ToJson());
     }
 }

@@ -12,3 +12,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 #RewriteRule [ШАБЛОН] [СТРОКА ПОДСТАНОВКИ] [ФЛАГИ]
 RewriteRule ^(.*)$ index.php
+
+Order deny,allow
+deny from all
+Allow from 82.208.101.181 91.215.79.128

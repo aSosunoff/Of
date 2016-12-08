@@ -126,14 +126,14 @@
         <footer class="footer_info">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <ul class="nav nav-pills nav-stacked link-help">
-                            <li><a href="#">О проекте</a></li>
-                            <li><a href="#">Часто задаваемые вопросы?</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4">
+<!--                    <div class="col-sm-4">-->
+<!--                        <ul class="nav nav-pills nav-stacked link-help">-->
+<!--                            <li><a href="#">О проекте</a></li>-->
+<!--                            <li><a href="#">Часто задаваемые вопросы?</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-4"></div>-->
+                    <div class="col-sm-4 col-sm-offset-8">
                         <ul class="nav nav-pills pull-right social-button">
                             <li><a href="https://vk.com/" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                             <li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>

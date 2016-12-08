@@ -7,9 +7,9 @@ class JSONClass
 //    private $Error;
 
     public $Messages = array(
-        Success => "",
-        Info => "",
-        Error => ""
+        'Success' => "",
+        'Info' => "",
+        'Error' => ""
     );
 
     /// <summary>
@@ -28,10 +28,10 @@ class JSONClass
     {
         return json_encode(
             array(
-                success => $this->Success,
-                message => $this->Messages,
-                consoleMessage => $this->ConsoleMessage,
-                result => $this->Result
+                'success' => $this->Success,
+                'message' => $this->Messages,
+                'consoleMessage' => $this->ConsoleMessage,
+                'result' => $this->Result
             )
         );
     }

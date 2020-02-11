@@ -38,6 +38,19 @@
     .top_mnu{
         font-size: 1.4em;
     }
+    footer.footer_info .nav.social-button > li > a {
+        font-size: 25px;
+    }
+    .social-button{
+        float: none;
+        width: 100%;
+    }
+    .social-button li{
+        display: table-cell;
+        float: none;
+        width: 1%;
+        text-align: center;
+    }
 
 }
 

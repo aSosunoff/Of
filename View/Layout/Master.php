@@ -129,7 +129,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-8">
-                        <ul class="nav nav-pills pull-right social-button">
+                        <ul class="nav nav-pills social-button">
                             <li><a href="https://vk.com/" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                             <li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
@@ -145,12 +145,11 @@
                     <div class="col-sm-6">
                         <div class="law">2016&#169; - Все права защищены</div>
                     </div>
-                    <div class="col-sm-6">
-                        <span id="developer">
-                            <span class="developer-description">Разработка:</span>
-                            <span class="developer-link"><a href="https://vk.com/berg_it" target="_blank">Alexander Berg</a></span>
-                        </span>
-
+                    <div class="col-sm-6 developer-box">
+                        <a href="https://vk.com/berg_it" target="_blank" id="developer">
+                            <span class="dev-icon-berg"></span>
+                            <span class="developer-description">Разработка: Alexander Berg</span>
+                        </a>
                     </div>
                 </div>
             </div>
